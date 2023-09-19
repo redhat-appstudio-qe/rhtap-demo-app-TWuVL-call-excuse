@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-pota
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-eork-tenant/rhtap-demo-app/hacbs-test-project-pota@sha256:e53250e9f12a4ae7571052b80cbcfbf6ee67b8aae74ecc68205d1e379296a072
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
